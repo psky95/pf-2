@@ -1,0 +1,86 @@
+section#product {
+  
+}
+section#product .wrap {
+  
+}
+section#product .wrap hgroup{
+  padding: 100px 0 50px 0;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column-reverse;
+}
+section#product .wrap hgroup h2{ 
+  font-weight: 600;
+}
+section#product .wrap hgroup h3{
+  
+  font-weight: 600;
+}
+section#product .wrap article { 
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  margin-bottom: 60px;
+  justify-content: center;
+  padding-left: 80px;
+  border-radius: 25px;
+}
+section#product .wrap article h2 {
+  
+  font-weight: 600;
+}
+section#product .wrap article p {
+  
+  margin: 20px 0;
+  line-height: 1.4;
+  font-size: 16px;
+}
+section#product .wrap article p span {
+  
+}
+section#product .wrap article a.more {
+  
+  border-radius: 20px;
+  font-size: 15px;
+  border: none;
+}
+section#product .wrap article:nth-of-type(1){
+  background-image: url(../img/air.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section#product .wrap article:nth-of-type(2){
+  background-image: url(../img/free.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+section#product .wrap article:nth-of-type(3){
+  background-image: url(../img/neo0.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+}
+section#product .wrap article:nth-of-type(4){
+  background-image: url(../img/potal.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+section#product div.wrap article:nth-of-type(1) a{
+  background-color: black;
+  color: white;
+}
+section#product div.wrap article:nth-of-type(2) a{  
+  color: black;
+  background-color: white;
+}
+section#product div.wrap article:nth-of-type(3) a{
+  background-color: white;
+  border: none;
+}
+section#product div.wrap article:nth-of-type(4) a{
+  color: black;
+  background-color: white;
+}

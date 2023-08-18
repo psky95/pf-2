@@ -1,0 +1,113 @@
+div#title {
+  /*! height: 850px; */
+  background-image: url(../img/unpack.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 490px;
+}
+div#title .wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+div#title .wrap div.unpack{ 
+  font-weight: 500;
+  padding-left: 40px;
+}
+div#title .wrap div.unpack .h2{
+  line-height: 1.15;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+div#title .wrap div.unpack .h5{ 
+  margin: 30px 0;
+  color: white;
+}
+div#title .wrap div.unpack .p{
+  
+  font-size: 16px;
+  color: white;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+div#title .wrap div.unpack>a{
+  
+  background-color: white;
+  display: inline-block;
+  border-radius: 20px;
+  font-size: 15px;
+  border: none;
+}
+div#title .wrap div.navi{ 
+  position: absolute;
+  bottom: 15px;
+  left: calc(50% - 345px);
+  height: 50px;
+  width: 750px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+div#title .wrap div.navi div{
+  
+  align-items: center;
+  display: flex;
+  gap: 11px;
+  margin-right: 8px;
+}
+div#title .wrap div.navi div .bullets{
+  
+  width: 19px;
+  height: 19px;
+  border: 1px solid #eee;
+  border-radius: 100%;
+}
+div#title .wrap div.navi button.play{
+  
+  background-image: url(../img/pauseW.svg);
+  width: 25px;
+  height: 25px;
+  font-size: 0;
+  border: none;
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+div#title .wrap span.control{
+  
+  position: absolute;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+div#title .wrap span.control button{
+  
+}
+div#title .wrap span.control button.next{
+  
+  transform: translateX(200%);
+  background-image: url(../img/nextarrow.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 55px;
+  height: 55px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+}
+div#title .wrap span.control button.prev{
+  
+  transform: translateX(-200%);
+  background-image: url(../img/prevarrow.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 55px;
+  height: 55px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+}

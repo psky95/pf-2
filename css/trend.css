@@ -1,0 +1,277 @@
+#trend {
+
+}
+#trend .wrap {
+
+  overflow: hidden;
+  position: relative;
+}
+#trend .wrap hgroup {
+
+  padding: 100px 0 50px;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+#trend .wrap hgroup h2 {
+
+  font-weight: 600;
+}
+#trend .wrap hgroup h3 {
+  font-weight: 600;
+  font-size: 15px;
+}
+#trend .wrap .contents {
+  width: 1440px;
+  flex-wrap: wrap;
+  position: relative;
+}
+#trend .wrap .contents ul {
+}
+#trend .wrap .contents .top{
+  display: flex;
+  width: 1440px;
+  justify-content: space-between;
+}
+#trend .wrap .contents .bottum{
+  
+  display: flex;
+  width: 1440px;
+  justify-content: space-between;
+}
+#trend .wrap .contents ul li {
+}
+#trend .wrap .contents ul li a{
+  
+}
+#trend .wrap .contents ul.top li:nth-of-type(1) a::before{
+  content: "";
+  background-image: url(../img/trend1.png);
+  height: 590px;
+  width: 448px;
+}
+#trend .wrap .contents ul.top li:nth-of-type(2) a::before{
+  content: "";
+  background-image: url(../img/trend2.png);
+  height: 280px;
+  width: 448px;
+}
+#trend .wrap .contents ul.top li:nth-of-type(3) a::before{
+  content: "";
+  background-image: url(../img/trend6.png);
+  height: 440px;
+  width: 448px;
+}
+#trend .wrap .contents ul.top li a::before{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: block;
+}
+#trend .wrap .contents ul.bottum li a::before{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: block;
+}
+#trend .wrap .contents ul.bottum li:nth-of-type(1) a::before{
+  content: "";
+  background-image: url(../img/trend3.png);
+  height: 440px;
+  width: 448px;
+}
+#trend .wrap .contents ul.bottum li:nth-of-type(2) a::before{
+  content: "";
+  background-image: url(../img/trend4.png);
+  width: 448px;
+  height: 590px;
+}
+#trend .wrap .contents ul.bottum li:nth-of-type(3) a::before{
+  content: "";
+  background-image: url(../img/trend5.png);
+  height: 440px;
+  width: 440px;
+}
+#trend .wrap .contents ul.bottum li:nth-of-type(2){  
+  position: absolute;
+  left: calc(50% - 220px);
+  bottom: 125px;
+}
+#trend .wrap .contents ul.bottum li:nth-of-type(3){  
+  position: absolute;
+  bottom: 80px;
+  right: 0px;
+}
+#trend .wrap .contents ul li h4 {
+  margin: 20px 0 10px 0;
+}
+#trend .wrap .contents ul li h5 {
+  font-weight: 600;
+}
+#trend .wrap .contents ul li p {
+  margin: 20px 0px 50px;
+  color: #666;
+  line-height: 1.6;
+}
+#trend .snsbox{ 
+  width: 1440px;
+  margin: 0 auto;
+  background-color: #85C4ED;
+  margin-top: 80px;
+  padding: 30px 0;
+}
+#trend .snsbox div.flex{ 
+  height: 60px;
+  align-items: center;
+  justify-content: space-around;
+}
+#trend .snsbox div.flex ul{   
+  display: flex;
+  height: 60px;
+  width: 380px;
+  align-items: center;
+  gap: 10px;
+}
+#trend .snsbox div.flex p{
+  
+  font-weight: 600;
+}
+#trend .snsbox div.flex ul li{
+  
+}
+#trend .snsbox div.flex ul li a{
+  
+}
+#trend .snsbox div.flex ul li:nth-of-type(1) a, #trend .snsbox div.flex ul li:nth-of-type(2) a, #trend .snsbox div.flex ul li:nth-of-type(3) a, 
+#trend .snsbox div.flex ul li:nth-of-type(4) a, #trend .snsbox div.flex ul li:nth-of-type(5) a {
+  background-repeat: no-repeat;
+  font-size: 0;
+  width: 70px;
+  height: 50px;
+  display: block;
+}
+#trend .snsbox div.flex ul li:nth-of-type(1) a {
+  background-image: url(../img/facebook.svg);
+}
+#trend .snsbox div.flex ul li:nth-of-type(2) a {
+  background-image: url(../img/instar.svg);
+}
+#trend .snsbox div.flex ul li:nth-of-type(3) a {
+  background-image: url(../img/youtube.svg);
+}
+#trend .snsbox div.flex ul li:nth-of-type(4) a {
+  background-image: url(../img/kakao.svg);
+}
+#trend .snsbox div.flex ul li:nth-of-type(5) a {
+  background-image: url(../img/twitter.svg);
+}
+#trend .wrap div.story {
+  display: flex;
+  width: 400%;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  height: 800px;
+}
+#trend .wrap div.story article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#trend .wrap div.story article:nth-child(1){
+  
+  background-image: url(../img/bespoke0.png);
+  justify-content: end;
+}
+#trend .wrap div.story article:nth-child(2){
+  
+  background-image: url(../img/expo0.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#trend .wrap div.story article:nth-child(3){
+  
+  background-image: url(../img/movie0.png);
+  justify-content: end;
+}
+#trend .wrap div.story article:nth-child(4){
+  
+  background-image: url(../img/gnusmas0.png);
+  justify-content: end;
+}
+#trend .wrap div.story article h2 {
+
+  font-weight: 600;
+  margin: 0 auto;
+}
+#trend .wrap div.story article:nth-of-type(1) h2{  
+  padding-bottom: 50px;
+  color: black;
+}
+#trend .wrap div.story article:nth-of-type(2) h2{
+  
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+  line-height: 1.4;
+}
+#trend .wrap div.story article:nth-of-type(3) h2{
+  
+  color: white;
+  padding-bottom: 50px;
+}
+#trend .wrap div.story article:nth-of-type(4) h2{
+  
+  color: white;
+  padding-bottom: 50px;
+}
+#trend .wrap div.story article p{
+  
+  text-align: center;
+  color: white;
+  margin: 30px 0;
+}
+#trend .wrap div.story article a {
+  border-radius: 20px;
+  font-size: 15px;
+  border: none;
+  background-color: white;
+  margin: 0 auto;
+  margin-bottom: 110px;
+  font-weight: 500;
+}
+#trend .wrap span.control{
+  
+  position: absolute;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  bottom: 400px;
+}
+#trend .wrap span.control button.next{
+  
+  transform: translateX(-150%);
+  background-image: url(../img/nextarrow.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 55px;
+  height: 55px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+}
+#trend .wrap span.control button.prev{
+  
+  transform: translateX(150%);
+  background-image: url(../img/prevarrow.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 55px;
+  height: 55px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+}
+
+

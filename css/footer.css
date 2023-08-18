@@ -1,0 +1,145 @@
+#footer {
+  
+  padding: 90px 0 110px;
+  background-color: #f2f2f2;
+  position: relative;
+}
+#footer div.full {
+   
+  margin: 0 auto;
+  max-width: 1440px;
+  position: relative;
+}
+#footer div.full .fnb {
+  
+}
+#footer div.full .fnb ul{ 
+  display: flex;
+  gap: 40px;
+  font-weight: 600;
+  font-size: 14px;
+}
+#footer div.full .fnb ul li {
+  
+}
+#footer div.full .finfo {
+   
+}
+#footer div.full .finfo p {
+                          
+  padding-top: 30px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.8;
+}
+#footer div.full .fbox {                         
+  position: absolute;
+  left: 45%;
+  top: 0px;
+  border-left: 1px #999 solid;
+  padding-left: 54px;
+}
+#footer div.full .fbox ul {
+                          
+  display: flex;
+  gap: 85px;
+}
+#footer div.full .fbox ul li {
+                          
+}
+#footer div.full .fbox ul li h2 {
+                          
+  font-weight: 300;
+}
+#footer div.full .fbox ul li h3 {
+                          
+  font-weight: 600;
+  padding: 10px 0;
+  line-height: 1.2;
+}
+#footer div.full .fbox ul li p {
+                          
+}
+#footer div.full .fbox .fbimg {
+                          
+  padding: 60px 0 20px;
+}
+#footer div.full .fbox .fbimg img {
+                          
+}
+#footer div.full .copy {                         
+  padding-top: 60px;
+}
+#footer div.full .copy p {
+                          
+}
+#footer div.full .flogo {                        
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#footer div.full .flogo img {
+                          
+}
+#footer div.full .flogo img a {
+                          
+}
+#footer div.full .family {
+                          
+  position: absolute;
+  right: 0;
+  top: 155px;
+  width: 190px;
+  padding: 0 45px 0 0;
+  box-sizing: border-box;
+}
+#footer div.full .family select{
+  
+  position: absolute;
+  font-size: 12px;
+  width: 147px;
+  height: 40px;
+  opacity: 0;
+}
+#footer div.full .family select option{
+  
+}
+#footer div.full .family span{
+  
+}
+#footer div.full .family .fbbox{
+  
+  width: 100%;
+  height: 40px;
+  font-size: 12px;
+  color: #767676;
+  background: url(../img/arrow-down.svg);
+  border: 1px #666666 solid;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+#footer div.full .family .fbboxInner{
+  
+  font-size: 12px;
+  color: #6d6d6d;
+  font-weight: 500;
+  white-space: nowrap;
+  line-height: 38px;
+  padding: 0 40px 0 12px;
+}
+#footer div.full .family button{
+  
+  position: absolute;
+  top: 0px;
+  right: 0;
+  border: 0;
+  background: #888;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
