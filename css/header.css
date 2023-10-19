@@ -7,7 +7,6 @@ header div.wrap {
 }
 header div.wrap nav{
   width: 100%;
-  height: 80px;
 }
 header div.wrap nav h1 {
   
@@ -106,21 +105,6 @@ header div.wrap nav .flex ul li a {
 header div.wrap nav .flex ul li a:hover{
   content: "";
   color: #109ad6;
-}
-header div.wrap nav .flex ul li.samsun{
-  
-  width: 70px;
-}
-header div.wrap nav .flex ul li.samsun a{
-  content:"";
-  background-image: url(../img/menu.svg);
-  width: 70px;
-  height: 55px;
-  display: block;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  font-size: 0;
 }
 header div.wrap nav form {
   width: 200px;

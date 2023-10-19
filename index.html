@@ -14,11 +14,18 @@
     <link rel="stylesheet" href="css/trend.css">
     <link rel="stylesheet" href="css/footer.css">
     <!-- 제이쿼리 -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" script type="text/javascript"></script>
-    <script type="text/javascript">
-    
-    </script>
-
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+        //사이드 탑스크롤 js
+        $(document).ready(function(){
+            function scrollToTop() {
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+            }
+            $("#scrollToTopButton").on("click", scrollToTop);
+        });
+    </script> 
+    <!-- 햄버거와 애니메이트 css -->
+    <link rel="stylesheet" href="css/hamburger.css">
     <!-- 구글폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +33,7 @@
 </head>
 <body>
     <!-- 상단영역 -->
-    <header>
+    <header id="top">
         <div class="wrap">
             <nav>
                 <h1>
@@ -52,10 +59,17 @@
                         <li><a href="#">삼성닷컴추천</a></li>
                         <li><a href="#">아울렛</a></li>
                         <li><a href="#">#Samsung Experience</a></li>
-                        <li class="samsun"><a href="#">#menu</a></li>
                     </ul>
+                    <nav>
+                        <div id="menuToggle">
+                          <input type="checkbox">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                    </nav>
                 </div>
-                <form action="">
+                <form action="https://www.samsung.com/sec/search/searchresult/?keyword=%EA%B0%A4%EB%9F%AD%EC%8B%9C%20Z%20%ED%94%8C%EB%A6%BD5">
                     <input type="text">
                     <button class="search">검색</button>  
                 </form>
@@ -65,25 +79,12 @@
     <!-- 타이틀영역 -->
     <div id="title" class="heith-full">
         <div class="wrap">
-            <div class="unpack">	
+            <div class="unpack">
                 <h2 class="h5">갤럭시 최초 한국언팩</h2>	
-                <h3 class="h2">새로운 Galaxy<br /> 사전판매 알림신청</h3>	
-                <p class="p">알림신청 후 구매 시 해피머니 5만원권 선착순 증정<br />시청광장 언팩 현장 관람권 추첨까지!</p>	
+                <h3 class="h2">새로운 Galaxy<br> 사전판매 알림신청</h3>	
+                <p class="p">알림신청 후 구매 시 해피머니 5만원권 선착순 증정<br>시청광장 언팩 현장 관람권 추첨까지!</p>	
                 <a href="" class="more">알림 신청하기</a>
-            </div>	
-            <div class="navi">
-                <div>
-                    <button class="bullets"></button>
-                    <button class="bullets"></button>
-                    <button class="bullets"></button>
-                    <button class="bullets"></button>
-                </div>
-                <button class="play">시작</button>  
             </div>
-            <span class="control">
-                <button class="prev">이전</button>
-                <button class="next">다음</button>
-            </span> 
         </div>	
     </div>
     <!-- 내용영역 -->
@@ -93,8 +94,9 @@
             <div class="wrap">
                 <hgroup>
                     <h2 class="h2 text-center">여름 특가</h2>
-                    <h3 class="p text-center">SAMSUNG'S SPECIAL SUMMER FESTIVAL</h3>
+                    <p class="p text-center">SAMSUNG'S SPECIAL SUMMER FESTIVAL</p>
                 </hgroup>
+                <!-- 추후 아티클 영역은 아티클>li로 수정 후 ul로 감싸서 슬릭적용 가능 -->
                 <article>
                     <h2 class="h2">에어컨 쿨 섬머 페스타</h2>
                     <p class="p">최대 41% 할인 혜택과 함께<span class="block"> 뜨거운 여름을 준비하세요!</span></p>
@@ -122,7 +124,7 @@
             <div class="wrap">
                 <hgroup>
                     <h2 class="h2 text-center">트렌드</h2>
-                    <h3 class="p text-center">WHAT'S HAPPENING @SAMSUNG.COM</h3>
+                    <p class="p text-center">WHAT'S HAPPENING @SAMSUNG.COM</p>
                 </hgroup>
                 <div class="contents flex">
                     <ul class="top">
@@ -145,7 +147,7 @@
                             <p class="p">에너지 계산기를 활용해 가전 제품의 평균 전력 소비량을 빠르고<span class="block">간단하게 확인해보세요!</span></p>
                         </li>
                     </ul>
-                    <ul class="bottum">   
+                    <ul class="bottum">
                         <li>
                             <a href=""></a>
                             <h4 class="p">EXPERIENCE</h4>
@@ -170,7 +172,7 @@
             <div class="wrap">
                 <hgroup>
                     <h2 class="h2">스토리</h2>
-                    <h3 class="p">#Do What You Cant</h3>
+                    <p class="p">#Do What You Cant</p>
                 </hgroup>
                 <div class="story">
                     <article>
@@ -191,10 +193,6 @@
                         <a href="" class="more">더 알아보기</a>
                     </article>
                 </div>
-                <span class="control">
-                    <button class="prev">이전</button>
-                    <button class="next">다음</button>
-                </span> 
             </div>
             <div class="snsbox">
                 <div class="flex">
@@ -207,11 +205,12 @@
                         <li><a href=""></a></li>
                     </ul>
                 </div>
+            </div>
         </section>
     </main>
     <aside>
         <a href="" class="plus">더보기</a>
-        <a href="" class="top">맨위로가기</a>
+        <a href="#top" id="scrollToTopButton" class="top">맨위로가기</a>
     </aside>
     <!-- 하단영역 -->
     <footer id="footer">   
@@ -246,15 +245,17 @@
             <div class="copy">
                 <p class="p">COPYRIGHT © 2020 ARNEGKOREA. ALL RIGHTS RESERVED.</p>
             </div>
-            <div class="flogo"><a href=""><img src="img/sslogo.png" alt=""></img></a></div>
+            <div class="flogo"><a href=""><img src="img/sslogo.png" alt="삼성 로고"></a></div>
             <div class="family">
-                    <select name="sitego" id="sitego">
-                        <option value="">패밀리사이트</option>
-                    </select>
-                    <span class="fbbox">패밀리사이트
-                        <span class="fbboxInner"></span>
-                    </span>
-                    <button>Go</button>
+                <select name="sitego" id="sitego">
+                    <option value="">패밀리사이트</option>
+                    <option value="">패밀리사이트</option>
+                    <option value="">패밀리사이트</option>
+                </select>
+                <span class="fbbox">패밀리사이트
+                    <span class="fbboxInner"></span>
+                </span>
+                <button>Go</button>
             </div>
         </div>
     </footer>

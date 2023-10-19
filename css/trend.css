@@ -18,7 +18,7 @@
 
   font-weight: 600;
 }
-#trend .wrap hgroup h3 {
+#trend .wrap hgroup p {
   font-weight: 600;
   font-size: 15px;
 }
@@ -240,38 +240,3 @@
   margin-bottom: 110px;
   font-weight: 500;
 }
-#trend .wrap span.control{
-  
-  position: absolute;
-  left: 0;
-  width: 100%;
-  justify-content: space-between;
-  display: flex;
-  bottom: 400px;
-}
-#trend .wrap span.control button.next{
-  
-  transform: translateX(-150%);
-  background-image: url(../img/nextarrow.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 55px;
-  height: 55px;
-  font-size: 0;
-  background-color: transparent;
-  border: none;
-}
-#trend .wrap span.control button.prev{
-  
-  transform: translateX(150%);
-  background-image: url(../img/prevarrow.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 55px;
-  height: 55px;
-  font-size: 0;
-  background-color: transparent;
-  border: none;
-}
-
-
